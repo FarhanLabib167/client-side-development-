@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FEECEE; /* Light Pink Background */
+    color: #4A5568; /* Dark Gray Text */
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+.text-accent { color: #A78BFA; } /* Lavender Accent */
+.bg-accent { background-color: #A78BFA; }
+.nav-link.active {
+    color: #A78BFA;
+    font-weight: 600;
+}
+.container .logo{
+    width:8vh;
+    height:8vh;
+}
+.font{
+    color: black;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+
+.hamburger span {
+    transition: all 0.3s ease-in-out;
+}
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.modal-backdrop {
+    transition: opacity 0.3s ease-in-out;
+}
+.cart-modal {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.cart-modal.active {
+    transform: translateX(0);
+}

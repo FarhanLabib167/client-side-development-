@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Go - Your Daily Beauty Essentials</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="text-gray-800">
+
+    <header id="header" class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="image/logo.jpg" alt="" class="logo">
+            </a>
+            <div class="flex items-center space-x-4">
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-accent transition duration-300">Home</a>
+                    <a href="#products" class="nav-link text-gray-600 hover:text-accent transition duration-300">Products</a>
+                    <a href="#offers" class="nav-link text-gray-600 hover:text-accent transition duration-300">Offers</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-accent transition duration-300">About Us</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-accent transition duration-300">Contact Us</a>
+                </nav>
+                 <div class="hidden md:flex items-center space-x-4">
+                    <a href="#products" class="order-btn bg-accent text-white font-bold py-2 px-6 rounded-full transition duration-300 shadow-lg hover:bg-violet-700">
+                        Shop Now
+                    </a>
+                    <button id="cart-button" class="relative text-gray-600 hover:text-accent transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03L21 6.3c.18-.33.28-.7.28-1.07 0-1.1-.9-2-2-2H5.21c-1.1 0-2 .9-2 2 0 .61.3 1.15.77 1.5l2.48 4.54c-.1.35-.15.7-.15 1.06 0 1.66 1.34 3 3 3h7c1.1 0 2-.9 2-2s-.9-2-2-2H8.1L6 4.95 5.21 4H4c-1.1 0-2 .9-2 2s.9 2 2 2h2.5L8.5 13H5.1c-1.1 0-2 .9-2 2s.9 2 2 2h7.45l-.6 1H8.1zM17 14c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                        <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">0</span>
+                    </button>
+                </div> 
+            </div>
+            <button id="hamburger-button" class="md:hidden hamburger z-50 flex flex-col justify-center items-center h-8 w-8">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 my-1.5"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white absolute top-full left-0 w-full shadow-md">
+            <nav class="flex flex-col items-center space-y-4 py-6">
+                <a href="#home" class="nav-link block text-gray-600 hover:text-accent transition duration-300">Home</a>
+                <a href="#products" class="nav-link block text-gray-600 hover:text-accent transition duration-300">Products</a>
+                <a href="#offers" class="nav-link block text-gray-600 hover:text-accent transition duration-300">Offers</a>
+                <a href="#about" class="nav-link block text-gray-600 hover:text-accent transition duration-300">About Us</a>
+                <a href="#contact" class="nav-link block text-gray-600 hover:text-accent transition duration-300">Contact Us</a>
+                <a href="#products" class="mt-4 order-btn bg-accent text-white font-bold py-2 px-6 rounded-full transition duration-300 shadow-lg block hover:bg-violet-700">Shop Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative text-white min-h-[60vh] md:min-h-[80vh] flex items-center">
+            <div class="absolute inset-0 bg-pink-accent opacity-90 z-0"></div>
+            <div class="absolute inset-0 z-0 opacity-20" style="background-image: url('image/background.png'); background-size: cover; background-position: center;"></div>
+            <div class="container mx-auto px-6 text-center z-10 animate-fadeIn">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight text-gray-800">Effortless Beauty, Radiant You</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-800">Discover our collection of skincare and makeup designed to enhance your natural glow.</p>
+                <div class="space-x-4">
+                    <a href="#products" class="font bg-white text-pink-accent font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 text-lg shadow-lg">Shop The Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Our Bestselling Products</h2>
+                <div id="product-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="py-16 bg-pink-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Special Offers & Bundles</h2>
+                <div id="offers-grid" class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="animate-fadeIn">
+                        <h2 class="text-3xl font-bold mb-4">Our Mission: Simple & Clean</h2>
+                        <p class="text-gray-600 mb-4">At Glow & Go, we believe that beauty should be simple, clean, and effective. We are dedicated to creating high-quality, cruelty-free products that work for every skin type and tone. Our mission is to empower you with confidence and to make your daily beauty routine a moment of self-care, not a chore.</p>
+                        <p class="text-gray-600 font-semibold">Our ingredients are ethically sourced and our formulas are designed to be kind to both your skin and the environment. Join us in our journey towards a more beautiful and sustainable future.</p>
+                        <h3 class="text-2xl font-bold mb-6 mt-12">Meet the Team</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                            <div>
+                                <img src="image/shithy.jpg" alt="Team Member 1" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover">
+                                <h4 class="text-lg font-semibold">Sarah Doe</h4>
+                                <p class="text-gray-500 text-sm">Founder</p>
+                                <p class="text-gray-600 text-sm mt-2">Sarah's passion for clean beauty led her to create Glow & Go, bringing simple, effective products to life.</p>
+                            </div>
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1582233470716-e5cde34b22c7?q=80&w=1974&auto=format&fit=crop" alt="Team Member 2" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover">
+                                <h4 class="text-lg font-semibold">Maria Rodriguez</h4>
+                                <p class="text-gray-500 text-sm">Head Chemist</p>
+                                <p class="text-gray-600 text-sm mt-2">Maria meticulously crafts each formula, ensuring every product is safe, effective, and luxurious.</p>
+                            </div>
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1542178243-d3493c049d59?q=80&w=1974&auto=format&fit=crop" alt="Team Member 3" class="rounded-full w-32 h-32 mx-auto mb-4 object-cover">
+                                <h4 class="text-lg font-semibold">Alex Chen</h4>
+                                <p class="text-gray-500 text-sm">Brand Manager</p>
+                                <p class="text-gray-600 text-sm mt-2">Alex ensures our brand message of simple, clean beauty reaches our community.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg shadow-lg overflow-hidden animate-fadeIn">
+                        <img src="image/about2.avif" alt="About us image" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Get in Touch</h2>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg animate-fadeIn">
+                        <h3 class="text-2xl font-bold mb-4">Visit Us or Say Hello</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p class="text-lg">We would love to hear from you! Whether you have a question about a product or just want to say hi, feel free to reach out. You can find us at our flagship store or contact us via phone or email.</p>
+                            <p>
+                                <strong class="block text-gray-900">Address:</strong>
+                                123 Beauty Lane, Reading, UK, RG1 1BB
+                            </p>
+                            <p>
+                                <strong class="block text-gray-900">Phone:</strong>
+                                <a href="tel:+441234567890" class="text-accent hover:underline" aria-label="Call Glow & Go at +441234567890">+44 1234 567890</a>
+                            </p>
+                            <p>
+                                <strong class="block text-gray-900">Email:</strong>
+                                <a href="mailto:contact@glowandgo.co.uk" class="text-accent hover:underline" aria-label="Email Glow & Go at contact@glowandgo.co.uk">contact@glowandgo.co.uk</a>
+                            </p>
+                            <div>
+                                <strong class="block text-gray-900 mb-2">Opening Hours:</strong>
+                                <ul class="space-y-1">
+                                    <li><strong>Mon - Fri:</strong> 9:00 AM - 6:00 PM</li>
+                                    <li><strong>Sat:</strong> 10:00 AM - 5:00 PM</li>
+                                    <li><strong>Sun:</strong> Closed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg animate-fadeIn">
+                        <h3 class="text-2xl font-bold mb-4">Send us a message</h3>
+                        <form id="contact-form" novalidate>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm">
+                                <span id="name-error" class="text-sm text-red-500"></span>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm">
+                                <span id="email-error" class="text-sm text-red-500"></span>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent sm:text-sm"></textarea>
+                                <span id="message-error" class="text-sm text-red-500"></span>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-violet-700 transition duration-300">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Glow & Go. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">123 Beauty Lane, Reading, UK, RG1 1BB</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 hidden modal-backdrop">
+        <div class="relative bg-white ml-auto h-full w-full sm:w-96 shadow-xl p-6 flex flex-col transform translate-x-full cart-modal">
+            <div class="flex items-center justify-between border-b pb-4">
+                <h3 class="text-2xl font-bold font-display text-gray-800">Your Cart</h3>
+                <button id="close-cart-modal" class="text-gray-500 hover:text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <div id="cart-items-container" class="flex-grow overflow-y-auto my-4 space-y-4">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="border-t pt-4">
+                <div class="flex justify-between items-center text-xl font-bold">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">£0.00</span>
+                </div>
+                <button class="w-full mt-4 py-3 bg-accent text-white font-bold rounded-lg hover:bg-violet-700 transition duration-300">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and custom script files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/cw2.js"></script>
+</body>
+</html>
